@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+        int index = 0;
+        int index2 = 0;
+        const int SIZE = 10;
+
+        char firstStringObj[SIZE], secondStringObj[SIZE], concatString[50]={'0'};
+
+        cout<<"Enter first String: ";
+        cin>>firstStringObj;
+
+        cout<<"Enter second String: ";
+        cin>>secondStringObj;
+
+        while(firstStringObj[index] != '\0') {
+             concatString[index] = firstStringObj[index];
+             index++;
+            }
+
+        while(secondStringObj[index2] != '\0') {
+              index++;
+              concatString[index] = secondStringObj[index2];
+              index2++;
+            }
+
+         cout<<"Concatenated String: ";
+            for(int j=0;j<SIZE+SIZE;j++)
+                cout<<concatString[j];
+         cout<<" ";
+    return 0;
+}
