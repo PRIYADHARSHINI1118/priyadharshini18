@@ -12,7 +12,7 @@ void splitString(string str)
             alpha.push_back(str[i]);
     }
  
-    cout << alpha << endl;
+   
     cout << num << endl;
 }
 int main()
